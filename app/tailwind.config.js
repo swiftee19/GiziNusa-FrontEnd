@@ -14,6 +14,7 @@ export default {
         secondary: '#C2C0F0',
         alert: '#D11A2A',
         gray: '#9A9AA9',
+        lightgray: '#ECEEF2',
       },
       colors:{
         primary: '#605BFF',
@@ -21,7 +22,8 @@ export default {
         alert: '#D11A2A',
         alertLight: '#FBE9EA',
         gray: '#9A9AA9',
-        offwhite: '#FAFAFB'
+        offwhite: '#FAFAFB',
+        lightgray: '#ECEEF2',
       }
     },
   },
