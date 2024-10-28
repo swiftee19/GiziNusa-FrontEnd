@@ -1,0 +1,28 @@
+.sidebarButton{
+    position: relative;
+}
+
+.sidebarButton::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, #ACA9FF, white);
+    z-index: -1;
+    transition: 0.3s;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.sidebarButton:hover::before{
+    transform: scaleX(1);
+}
+
+.sidebarButton:hover .sidebarButtonText{
+    color: #605BFF;
+}
+
+.sidebarButton:hover .sidebarButtonImage{
+    filter: invert(13%) sepia(86%) saturate(3882%) hue-rotate(243deg) brightness(111%) contrast(141%);
+}

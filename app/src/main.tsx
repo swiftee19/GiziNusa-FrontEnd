@@ -17,7 +17,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="flex">
+    <div className="flex p-0">
       <Sidebar />
       <RouterProvider router={router} />
     </div>

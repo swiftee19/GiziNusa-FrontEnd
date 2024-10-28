@@ -1,9 +1,9 @@
-export type SidebarButtonData = {
+export type SidebarButtonDataType = {
     icon:string
     text:string
 }
 
-export const sidebar_buttons_data:SidebarButtonData[] = [
+export const sidebar_buttons_data:SidebarButtonDataType[] = [
     {icon: '/sidebar/mealplans_icon.svg', text: 'Meal Plans'},
     {icon: '/sidebar/tracking_icon.svg', text: 'Tracking'},
     {icon: '/sidebar/messages_icon.svg', text: 'Messages'},
