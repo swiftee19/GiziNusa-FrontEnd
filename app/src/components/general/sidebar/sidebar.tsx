@@ -11,12 +11,14 @@ export default function Sidebar() {
         <img className="size-10" src="/GiziNusa_icon.svg" alt="GiziNusa icon" />
         <h2 className="text-secondary font-bold text-xl">GiziNusa</h2>
       </div>
-      {sidebar_buttons_data.map((sidebarButtonData: SidebarButtonDataType) => (
-        <SidebarButton
-          key={sidebarButtonData.text}
-          sidebarButtonData={sidebarButtonData}
-        />
-      ))}
+        {sidebar_buttons_data.map(
+          (sidebarButtonData: SidebarButtonDataType) => (
+            <SidebarButton
+              key={sidebarButtonData.text}
+              sidebarButtonData={sidebarButtonData}
+            />
+          )
+        )}
     </div>
   );
 }

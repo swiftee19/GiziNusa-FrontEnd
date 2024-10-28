@@ -21,6 +21,7 @@ export default {
         alert: '#D11A2A',
         alertLight: '#FBE9EA',
         gray: '#9A9AA9',
+        offwhite: '#FAFAFB'
       }
     },
   },
