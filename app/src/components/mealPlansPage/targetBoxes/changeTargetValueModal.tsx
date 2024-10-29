@@ -74,7 +74,7 @@ export default function ChangeTargetValueModal({
               <p className="text-lg pr-4">{initialReceivedTargetValueMetric}</p>
             </div>
             <button
-              className="w-full rounded-xl border-none bg-primary py-2 px-4 text-white hover:cursor-pointer"
+              className="btn-primary w-full py-2 px-4"
               onClick={() => {
                 updateTargetValue();
               }}

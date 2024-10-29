@@ -9,6 +9,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-primary {
+  @apply bg-primary text-white rounded-xl border border-primary hover:bg-white hover:text-primary hover:cursor-pointer transition duration-300;
+}
+
 *, *::before, *::after {
   font-family: 'Nunito', sans-serif;
   margin: 0;
