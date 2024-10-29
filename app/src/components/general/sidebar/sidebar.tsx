@@ -7,7 +7,7 @@ import SidebarButton from "./sidebarButton";
 export default function Sidebar() {
   return (
     <div className="flex flex-col py-10">
-      <div className="flex items-center gap-4 pb-2 px-4">
+      <div className="flex items-center gap-4 pb-8 px-4">
         <img className="size-10" src="/GiziNusa_icon.svg" alt="GiziNusa icon" />
         <h2 className="text-secondary font-bold text-xl">GiziNusa</h2>
       </div>

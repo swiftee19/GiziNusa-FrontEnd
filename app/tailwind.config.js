@@ -24,6 +24,9 @@ export default {
         gray: '#9A9AA9',
         offwhite: '#FAFAFB',
         lightgray: '#ECEEF2',
+      },
+      backgroundColor:{
+        thinOverlay: 'rgba(0,0,0,0.3)',
       }
     },
   },
