@@ -54,15 +54,15 @@ export default function MealPlansPage() {
     <>
       <div className="w-full h-full bg-offwhite flex flex-col gap-4 py-8 px-4">
         <SearchBar />
-        <div className="flex h-[40vh] gap-2">
-          <div className="min-w-[30vw] w-fit h-fit">
+        <div className="flex h-fit gap-2">
+          <div className="min-w-[30vw] w-fit">
             <TargetBoxes targetBoxes={targetBoxesData} />
           </div>
-          <div className="w-full">
+          <div className="w-full h-fit">
             <RiskMatrixGraph />
           </div>
         </div>
-        <div className="flex h-[40vh] gap-2">
+        <div className="flex min-h-[40vh] h-full gap-2">
           <div className="min-w-[30vw] max-w-[30vw] h-full">
             <StuntingRiskGraph />
           </div>
