@@ -1,6 +1,6 @@
 // RootLayout.tsx
 import { Outlet } from "react-router-dom";
-import Sidebar from "./components/general/sidebar/sidebar";
+import Sidebar from "./components/general/sidebar/Sidebar";
 
 const RootLayout = () => {
   return (
@@ -18,7 +18,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MealPlansPage from "./pages/mealPlansPage";
+import MealPlansPage from "./pages/MealPlansPage";
 
 const router = createBrowserRouter([
   {

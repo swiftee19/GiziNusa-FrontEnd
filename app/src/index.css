@@ -37,3 +37,27 @@ body {
   min-height: 100vh;
   min-width: 100vw;
 }
+
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 4px; /* width for vertical scrollbar */
+  height: 2px; /* height for horizontal scrollbar */
+}
+
+/* Style the track (background) */
+::-webkit-scrollbar-track {
+  background: white; /* background color */
+  border-radius: 4px; /* rounded corners */
+}
+
+/* Style the draggable thumb */
+::-webkit-scrollbar-thumb {
+  background: white; /* thumb color */
+  border-radius: 4px;
+  border: 2px solid #605BFF; /* adds spacing around the thumb */
+}
+
+/* Style on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ECEEF2; /* darker thumb color on hover */
+}

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import SearchBar from "../components/mealPlansPage/searchBar/searchBar";
-import TargetBoxes from "../components/mealPlansPage/targetBoxes/targetBoxes";
-import { TargetBoxSingularProps } from "../components/mealPlansPage/targetBoxes/targetBoxSingular";
-import RiskMatrixGraph from "../components/mealPlansPage/riskMatrixGraph/riskMatrixGraph";
-import StuntingRiskGraph from "../components/mealPlansPage/stuntingRiskGraph/stuntingRiskGraph";
-import MealPlans from "../components/mealPlansPage/mealPlans/mealPlans";
+import SearchBar from "../components/mealPlansPage/searchBar/SearchBar";
+import TargetBoxes from "../components/mealPlansPage/targetBoxes/TargetBoxes";
+import { TargetBoxSingularProps } from "../components/mealPlansPage/targetBoxes/TargetBoxSingular";
+import RiskMatrixGraph from "../components/mealPlansPage/riskMatrixGraph/RiskMatrixGraph";
+import StuntingRiskTable from "../components/mealPlansPage/stuntingRiskTable/StuntingRiskTable";
+import MealPlans from "../components/mealPlansPage/mealPlans/MealPlans";
 
 export default function MealPlansPage() {
   const [targetKarbo, setTargetKarbo] = useState<number>(60);
@@ -64,7 +64,7 @@ export default function MealPlansPage() {
         </div>
         <div className="flex min-h-[40vh] h-full gap-2">
           <div className="min-w-[30vw] max-w-[30vw] h-full">
-            <StuntingRiskGraph />
+            <StuntingRiskTable />
           </div>
           <div className="w-full h-full flex flex-col gap-1">
             <MealPlans />
