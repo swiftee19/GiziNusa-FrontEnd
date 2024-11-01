@@ -48,7 +48,6 @@ export default function RiskTableHeader({
             style={{ transform: isRiskSortDescending ? "rotate(180deg)" : "" }}
             src="/arrow_down_icon.svg"
             alt="arrow down icon"
-            onClick={() => {}}
           />
         </div>
         <div
@@ -63,7 +62,6 @@ export default function RiskTableHeader({
             style={{ transform: isPacketSortDescending ? "rotate(180deg)" : "" }}
             src="/arrow_down_icon.svg"
             alt="arrow down icon"
-            onClick={() => {}}
           />
         </div>
         <div
@@ -78,7 +76,6 @@ export default function RiskTableHeader({
             style={{ transform: isPriceSortDescending ? "rotate(180deg)" : "" }}
             src="/arrow_down_icon.svg"
             alt="arrow down icon"
-            onClick={() => {}}
           />
         </div>
       </div>

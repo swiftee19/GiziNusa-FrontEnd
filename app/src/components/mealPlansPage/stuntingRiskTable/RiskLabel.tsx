@@ -1,7 +1,7 @@
 enum DangerLevel {
-  Low = "Low",
-  Moderate = "Moderate",
-  High = "High",
+  LOW = "Low",
+  MODERATE = "Moderate",
+  HIGH = "High",
 }
 
 interface RiskLabelProps {
@@ -10,11 +10,11 @@ interface RiskLabelProps {
 
 function calculateDangerLevel(risk: string): DangerLevel {
   if (parseInt(risk) < 30) {
-    return DangerLevel.Low;
+    return DangerLevel.LOW;
   } else if (parseInt(risk) < 60) {
-    return DangerLevel.Moderate;
+    return DangerLevel.MODERATE;
   } else {
-    return DangerLevel.High;
+    return DangerLevel.HIGH;
   }
 }
 
@@ -24,17 +24,17 @@ export default function RiskLabel({risk}: RiskLabelProps) {
   return (
     <>
     <div className="w-fit pr-1">
-      {dangerLevel === DangerLevel.Low && (
+      {dangerLevel === DangerLevel.LOW && (
         <div className="rounded-xl px-6 py-2 bg-lightblue">
           <p className="text-lg text-blue">{risk}%</p>
         </div>
       )}
-      {dangerLevel === DangerLevel.Moderate && (
+      {dangerLevel === DangerLevel.MODERATE && (
         <div className="rounded-xl px-6 py-2 bg-lightyellow">
           <p className="text-lg text-yellow">{risk}%</p>
         </div>
       )}
-      {dangerLevel === DangerLevel.High && (
+      {dangerLevel === DangerLevel.HIGH && (
         <div className="rounded-xl px-6 py-2 bg-lightred">
           <p className="text-lg text-red">{risk}%</p>
         </div>

@@ -22,6 +22,8 @@ export default {
         yellow:'#DA8207',
         lightred:'#FDEAEA',
         red:'#E22626',
+        lightgreen:'#EFFEF2',
+        green:'#5BEF76',
       },
       colors:{
         primary: '#605BFF',
@@ -38,6 +40,8 @@ export default {
         yellow:'#DA8207',
         lightred:'#FDEAEA',
         red:'#E22626',
+        lightgreen:'#EFFEF2',
+        green:'#5BEF76',
       },
       backgroundColor:{
         thinOverlay: 'rgba(0,0,0,0.3)',

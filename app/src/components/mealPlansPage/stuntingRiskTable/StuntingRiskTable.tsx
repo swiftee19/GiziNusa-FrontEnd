@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import RiskTableHeader from "./RiskTableHeader";
 import { StuntingRiskRowProps } from "./StuntingRiskRow";
-import StuntingRiskRows from "./stuntingRiskRows";
+import StuntingRiskRows from "./StuntingRiskRows";
 
 export default function StuntingRiskTable() {
   const [stuntingRiskRowData, setStuntingRiskRowData] = useState<
@@ -187,8 +187,8 @@ export default function StuntingRiskTable() {
 
   return (
     <>
-      <div className="bg-white w-full h-full rounded-xl border-2 border-solid border-lightgray flex flex-col gap-1 p-4 text-boldgray overflow-hidden">
-        <h2>Risiko Stunting</h2>
+      <div className="bg-white w-full h-full rounded-xl border-2 border-solid border-lightgray flex flex-col gap-1 p-4 overflow-hidden">
+        <h2 className="text-boldgray">Risiko Stunting</h2>
         <div className="w-full h-fit grid grid-cols-4 gap-4 relative">
           {/* headers */}
           <RiskTableHeader
@@ -202,7 +202,7 @@ export default function StuntingRiskTable() {
             switchRiskSort={switchRiskSort}
           />
           {/* divider */}
-          <span className="w-full h-fit col-span-4 border-t-0 border-l-0 border-r-0 border-b-2 border-solid border-lightgray"></span>
+          <span className="h-[0.125rem] bg-lightgray col-span-4"></span>
           {/* items */}
           <StuntingRiskRows stuntingRiskRowData={sortedStuntingRiskRowData} />
         </div>
