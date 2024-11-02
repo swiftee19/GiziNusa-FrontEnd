@@ -1,32 +1,66 @@
-import { TargetLabelEnum, TargetLabelUnitEnum } from "../../../typesEnumsInterfaces/targetLabel";
-import { foodIngredient } from "../../mealPlan/foodIngredient";
+import {
+  TargetLabelEnum,
+  TargetLabelUnitEnum,
+} from "../../../typesEnumsInterfaces/targetLabel";
+import { FoodIngredient } from "../../mealPlan/foodIngredient";
 import TargetLabel from "./TargetLabel";
 
 export interface MealPlanTableRowProps {
   packetName: string;
   price: number;
-  foodIngredients: foodIngredient[];
+  foodIngredients: FoodIngredient[];
   targetKarbo: number;
   targetProtein: number;
   targetKalori: number;
 }
 
-export default function MealPlanTableRow() {
+export default function MealPlanTableRow({
+  packetName,
+  price,
+  foodIngredients,
+  targetKarbo,
+  targetProtein,
+  targetKalori,
+}: MealPlanTableRowProps) {
+
+  const formattedPrice = new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+  }).format(price);
+
   return (
     <>
-      <div className="col-span-6 grid grid-cols-3 gap-2">
-        <p>Paket 1</p>
-        <p>Rp 560.000</p>
-        <div className="flex flex-col">
-          <p>Beras - 20 Kg</p>
-          <p>Beras - 20 Kg</p>
-          <p>Beras - 20 Kg</p>
+      <div className="col-span-6 grid grid-cols-6 gap-2">
+        <p className="col-span-1">{packetName}</p>
+        <p className="col-span-2 px-1">{formattedPrice}</p>
+        <div className="col-span-3 flex flex-col">
+          {foodIngredients.map((fi:FoodIngredient) => {
+            return (
+              <>
+                <p>
+                  {fi.ingredientName} - {fi.amount} {fi.unit}
+                </p>
+              </>
+            );
+          })}
         </div>
       </div>
       <div className="col-span-5 grid grid-cols-3 gap-2">
-        <TargetLabel targetLabel={TargetLabelEnum.KARBO} value={5.848} unit={TargetLabelUnitEnum.G}/>
-        <TargetLabel targetLabel={TargetLabelEnum.PROTEIN} value={1.284} unit={TargetLabelUnitEnum.G} />
-        <TargetLabel targetLabel={TargetLabelEnum.KALORI} value={42.210} unit={TargetLabelUnitEnum.KCAL} />
+        <TargetLabel
+          targetLabel={TargetLabelEnum.KARBO}
+          value={targetKarbo}
+          unit={TargetLabelUnitEnum.G}
+        />
+        <TargetLabel
+          targetLabel={TargetLabelEnum.PROTEIN}
+          value={targetProtein}
+          unit={TargetLabelUnitEnum.G}
+        />
+        <TargetLabel
+          targetLabel={TargetLabelEnum.KALORI}
+          value={targetKalori}
+          unit={TargetLabelUnitEnum.KCAL}
+        />
       </div>
       <div className="col-span-1 flex justify-center items-start">
         <input

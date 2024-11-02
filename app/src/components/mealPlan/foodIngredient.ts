@@ -1,11 +1,11 @@
-import { TargetLabelEnum } from "../mealPlansPage/mealPlans/TargetLabel";
+import { TargetLabelEnum } from "../../typesEnumsInterfaces/targetLabel";
 
 export enum FoodIngredientUnitEnum {
     KG = "Kg",
     L = "Liter",
 }
 
-export type foodIngredient = {
+export type FoodIngredient = {
     ingredientName: string;
     amount: number;
     unit: FoodIngredientUnitEnum;

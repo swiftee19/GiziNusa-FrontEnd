@@ -7,7 +7,7 @@ interface StuntingRiskRowsProps {
 function StuntingRiskRows({stuntingRiskRowData}: StuntingRiskRowsProps) {
   return (
     <>
-      <div className="grid col-span-4 gap-4 w-full max-h-[33vh] overflow-y-auto">
+      <div className="grid col-span-4 gap-4 w-full max-h-[45vh] overflow-y-auto">
         {stuntingRiskRowData.map((data, index) => (
           <StuntingRiskRow
             packet={data.packet}
