@@ -52,12 +52,11 @@ body {
 
 /* Style the draggable thumb */
 ::-webkit-scrollbar-thumb {
-  background: white; /* thumb color */
+  background: #605BFF; /* thumb color */
   border-radius: 4px;
-  border: 2px solid #605BFF; /* adds spacing around the thumb */
 }
 
 /* Style on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ECEEF2; /* darker thumb color on hover */
+  background: #0800ff /* darker thumb color on hover */
 }
