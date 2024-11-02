@@ -7,10 +7,10 @@ import StuntingRiskTable from "../components/mealPlansPage/stuntingRiskTable/Stu
 import MealPlans from "../components/mealPlansPage/mealPlans/MealPlans";
 
 export default function MealPlansPage() {
-  const [targetKarbo, setTargetKarbo] = useState<number>(60);
+  const [targetKarbo, setTargetKarbo] = useState<number>(225);
   const [targetProtein, setTargetProtein] = useState<number>(60);
-  const [targetKalori, setTargetKalori] = useState<number>(60);
-  const [mealDiterima, setMealDiterima] = useState<number>(70);
+  const [targetKalori, setTargetKalori] = useState<number>(2000);
+  const [mealDiterima, setMealDiterima] = useState<number>(73);
 
   const [targetBoxesData, settargetBoxesData] = useState<
     TargetBoxSingularProps[]

@@ -18,10 +18,10 @@ export default function StuntingRiskRow({
   return (
     <>
       <div className="w-full h-fit col-span-4 grid grid-cols-4">
-        <p className="text-lg text-black break-all pr-1">{region}</p>
+        <p className="2xl:text-lg text-black break-all pr-1">{region}</p>
         <RiskLabel risk={risk} />
-        <p className="text-lg text-black break-all pr-1">{packet}</p>
-        <p className="text-lg text-black break-all pr-1">Rp {priceReformatted}</p>
+        <p className="2xl:text-lg text-black break-all pr-1">{packet}</p>
+        <p className="2xl:text-lg text-black break-all pr-1">Rp {priceReformatted}</p>
       </div>
     </>
   );

@@ -56,7 +56,7 @@ export default function RiskTableHeader({
             switchPacketSort();
           }}
         >
-          <p className="text-lg text-black">Packet</p>
+          <p className="text-lg text-black">Paket</p>
           <img
             className="size-2"
             style={{ transform: isPacketSortDescending ? "rotate(180deg)" : "" }}

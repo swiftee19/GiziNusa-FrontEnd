@@ -26,17 +26,17 @@ export default function RiskLabel({risk}: RiskLabelProps) {
     <div className="w-fit pr-1">
       {dangerLevel === DangerLevel.LOW && (
         <div className="rounded-xl px-6 py-2 bg-lightblue">
-          <p className="text-lg text-blue">{risk}%</p>
+          <p className="2xl:text-lg text-blue">{risk}%</p>
         </div>
       )}
       {dangerLevel === DangerLevel.MODERATE && (
         <div className="rounded-xl px-6 py-2 bg-lightyellow">
-          <p className="text-lg text-yellow">{risk}%</p>
+          <p className="2xl:text-lg text-yellow">{risk}%</p>
         </div>
       )}
       {dangerLevel === DangerLevel.HIGH && (
         <div className="rounded-xl px-6 py-2 bg-lightred">
-          <p className="text-lg text-red">{risk}%</p>
+          <p className="2xl:text-lg text-red">{risk}%</p>
         </div>
       )}
       </div>
