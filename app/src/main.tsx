@@ -4,6 +4,8 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MealPlansPage from "./pages/MealPlansPage";
+import MessagesPage from "./pages/MessagesPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import RootLayout from "./rootLayout";
 
 const router = createBrowserRouter([
@@ -20,8 +22,12 @@ const router = createBrowserRouter([
         element: <MealPlansPage />,
       },
       {
+        path: "/messages",
+        element: <MessagesPage />,
+      },
+      {
         path: "*",
-        element: <div>not found</div>,
+        element: <NotFoundPage/>,
       },
     ],
   },
