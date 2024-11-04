@@ -52,7 +52,7 @@ export default function MealPlansPage() {
 
   return (
     <>
-      <div className="w-full h-full bg-offwhite flex flex-col gap-4 py-8 px-4">
+      <div className="w-full h-full flex flex-col gap-4 py-8 px-4">
         <SearchBar />
         <div className="flex h-fit gap-2">
           <div className="min-w-[30vw] w-fit">
