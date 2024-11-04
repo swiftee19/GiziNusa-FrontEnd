@@ -1,24 +1,10 @@
-// RootLayout.tsx
-import { Outlet } from "react-router-dom";
-import Sidebar from "./components/general/sidebar/Sidebar";
-
-const RootLayout = () => {
-  return (
-    <div className="flex p-0 m-0 min-h-screen min-w-[100vw]">
-      <Sidebar />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-    </div>
-  );
-};
-
 // index.tsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MealPlansPage from "./pages/mealPlansPage";
+import MealPlansPage from "./pages/MealPlansPage";
+import RootLayout from "./rootLayout";
 
 const router = createBrowserRouter([
   {
