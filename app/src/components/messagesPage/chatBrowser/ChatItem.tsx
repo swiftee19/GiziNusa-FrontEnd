@@ -46,7 +46,7 @@ export default function ChatItem({
 
   return (
     <>
-      <div className="w-full px-4 py-2 flex gap-4 items-center">
+      <div className="w-full px-4 py-2 rounded-md flex gap-4 items-center transition-all hover:cursor-pointer hover:bg-pink-50">
         <img
           className="size-10 rounded-full object-contain"
           src={userImage}
