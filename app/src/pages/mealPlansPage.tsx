@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SearchBar from "../components/mealPlansPage/searchBar/SearchBar";
+import MealPlansSearchBar from "../components/mealPlansPage/searchBar/MealPlansSearchBar";
 import TargetBoxes from "../components/mealPlansPage/targetBoxes/TargetBoxes";
 import { TargetBoxSingularProps } from "../components/mealPlansPage/targetBoxes/TargetBoxSingular";
 import RiskMatrixGraph from "../components/mealPlansPage/riskMatrixGraph/RiskMatrixGraph";
@@ -53,7 +53,7 @@ export default function MealPlansPage() {
   return (
     <>
       <div className="w-full h-full flex flex-col gap-4 py-8 px-4">
-        <SearchBar />
+        <MealPlansSearchBar />
         <div className="flex h-fit gap-2">
           <div className="min-w-[30vw] w-fit">
             <TargetBoxes targetBoxes={targetBoxesData} />

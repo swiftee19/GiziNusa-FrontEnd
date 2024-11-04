@@ -1,4 +1,4 @@
-import { TargetLabelEnum } from "../../typesEnumsInterfaces/targetLabel";
+import { TargetLabelEnum } from "../../../typesEnumsInterfaces/targetLabel";
 
 export enum FoodIngredientUnitEnum {
     KG = "Kg",

@@ -2,7 +2,7 @@ import {
   TargetLabelEnum,
   TargetLabelUnitEnum,
 } from "../../../typesEnumsInterfaces/targetLabel";
-import { FoodIngredient } from "../../mealPlan/foodIngredient";
+import { FoodIngredient } from "./foodIngredient";
 import TargetLabel from "./TargetLabel";
 
 export interface MealPlanTableRowProps {

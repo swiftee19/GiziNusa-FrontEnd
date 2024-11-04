@@ -128,7 +128,7 @@ export default function MealPlans() {
             switchProteinSort={switchProteinSort}
           />
           {/* divider */}
-          <span className="col-span-11 h-[0.125rem] bg-lightgray" />
+          <span className="col-span-11 divider" />
           {/* data */}
           <div className="col-span-12 grid grid-cols-12 gap-2 bg-white max-h-[33vh] overflow-y-auto">
             {dummyMealPlanData.map((mealPlan) => {

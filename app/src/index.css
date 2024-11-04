@@ -13,6 +13,11 @@
   @apply bg-primary text-white rounded-xl border border-primary hover:bg-white hover:text-primary hover:cursor-pointer transition duration-300;
 }
 
+.divider{
+  @apply w-full h-[0.125rem] bg-lightgray;
+}
+
+
 *, *::before, *::after {
   font-family: 'Nunito', sans-serif;
   margin: 0;

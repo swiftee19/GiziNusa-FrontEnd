@@ -106,7 +106,7 @@ export default function StuntingRiskTable() {
             switchRiskSort={switchRiskSort}
           />
           {/* divider */}
-          <span className="h-[0.125rem] bg-lightgray col-span-4"></span>
+          <span className="divider col-span-4"></span>
           {/* items */}
           <StuntingRiskRows stuntingRiskRowData={sortedStuntingRiskRowData} />
         </div>
