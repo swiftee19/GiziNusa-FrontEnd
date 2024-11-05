@@ -1,5 +1,5 @@
 import { SidebarButtonDataType } from "./sidebarButtonsData";
-import styles from "../../../styles/components/sidebar/SidebarButton.module.css";
+import styles from "../../../styles/components/sidebar/sidebarButton.module.css";
 import { Link, useLocation } from "react-router-dom";
 
 interface SidebarButtonProps {

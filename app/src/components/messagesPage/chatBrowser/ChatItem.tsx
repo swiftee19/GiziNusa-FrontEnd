@@ -53,8 +53,8 @@ export default function ChatItem({
           alt="user image"
         />
         <div className=" flex flex-col justify-start">
-          <h3>{userName}</h3>
-          <p className="text-gray truncate max-w-40">{lastMessage}</p>
+          <h3 className="text-lg">{userName}</h3>
+          <p className="text-gray text-sm truncate max-w-40">{lastMessage}</p>
         </div>
         <p className="ml-auto h-full max-w-28 text-gray text-right text-sm">{lastMessageTimeAgo}</p>
       </div>

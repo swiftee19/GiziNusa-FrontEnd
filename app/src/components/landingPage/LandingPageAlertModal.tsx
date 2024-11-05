@@ -11,7 +11,7 @@ export default function LandingPageAlertModal({
     <>
       {isModalOpen && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-thinOverlay">
-          <div className="bg-white w-1/2 h-1/2 py-4 px-10 rounded-xl flex flex-col gap-4 items-center justify-start">
+          <div className="bg-white w-1/3 py-4 px-10 rounded-xl flex flex-col gap-6 items-center justify-start">
             <img className="size-20" src="/alert_icon.svg" alt="Alert Icon" />
             <p className="text-xl text-center">
               Aplikasi ini masih dalam tahap pengembangan. Beberapa fitur

@@ -1,5 +1,5 @@
 import ChatBrowser from "../components/messagesPage/chatBrowser/ChatBrowser";
-import ChatWindow from "../components/messagesPage/ChatWindow";
+import ChatWindow from "../components/messagesPage/chatWindow/ChatWindow";
 
 export default function MessagesPage() {
   return (
