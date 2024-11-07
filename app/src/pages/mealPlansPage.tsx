@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import MealPlansSearchBar from "../components/mealPlansPage/searchBar/MealPlansSearchBar";
-import TargetBoxes from "../components/mealPlansPage/targetBoxes/TargetBoxes";
-import { TargetBoxSingularProps } from "../components/mealPlansPage/targetBoxes/TargetBoxSingular";
-import RiskMatrixGraph from "../components/mealPlansPage/riskMatrixGraph/RiskMatrixGraph";
+import TargetBoxes from "../components/mealPlansPage/targetBoxes/targetBoxes";
+import { TargetBoxSingularProps } from "../components/mealPlansPage/targetBoxes/targetBoxSingular";
+import RiskMatrixGraph from "../components/mealPlansPage/riskMatrixGraph/riskMatrixGraph";
 import StuntingRiskTable from "../components/mealPlansPage/stuntingRiskTable/StuntingRiskTable";
-import MealPlans from "../components/mealPlansPage/mealPlans/MealPlans";
+import MealPlans from "../components/mealPlansPage/mealPlans/mealPlans";
 
 export default function MealPlansPage() {
   const [targetKarbo, setTargetKarbo] = useState<number>(225);
   const [targetProtein, setTargetProtein] = useState<number>(60);
   const [targetKalori, setTargetKalori] = useState<number>(2000);
-  const [mealDiterima, setMealDiterima] = useState<number>(73);
+  const mealDiterima = 73
 
   const [targetBoxesData, settargetBoxesData] = useState<
     TargetBoxSingularProps[]
@@ -22,7 +22,7 @@ export default function MealPlansPage() {
         icon: "/mealPlansPage/targetBoxes/target_karbo.svg",
         target: "Target Karbo",
         targetValue: `${targetKarbo} g`,
-        changeTargetFunction: (e) => {
+        changeTargetFunction: (e:number) => {
           setTargetKarbo(e);
         },
       },
@@ -30,7 +30,7 @@ export default function MealPlansPage() {
         icon: "/mealPlansPage/targetBoxes/target_protein.svg",
         target: "Target Protein",
         targetValue: `${targetProtein} g`,
-        changeTargetFunction: (e) => {
+        changeTargetFunction: (e:number) => {
           setTargetProtein(e);
         },
       },
@@ -38,7 +38,7 @@ export default function MealPlansPage() {
         icon: "/mealPlansPage/targetBoxes/target_kalori.svg",
         target: "Target Kalori",
         targetValue: `${targetKalori} kcal`,
-        changeTargetFunction: (e) => {
+        changeTargetFunction: (e:number) => {
           setTargetKalori(e);
         },
       },

@@ -1,5 +1,4 @@
 export interface ChatItemProps {
-  chatId: string;
   userImage: string;
   userName: string;
   lastMessage: string;
@@ -7,7 +6,6 @@ export interface ChatItemProps {
 }
 
 export default function ChatItem({
-  chatId,
   userImage,
   userName,
   lastMessage,
@@ -15,7 +13,7 @@ export default function ChatItem({
 }: ChatItemProps) {
   const timeSince = (date: Date) => {
     const now: Date = new Date();
-    const differenceInMilliseconds: number = now - date;
+    const differenceInMilliseconds: number = now.getTime() - date.getTime();
 
     const minutes = Math.floor(differenceInMilliseconds / (1000 * 60));
     const hours = Math.floor(differenceInMilliseconds / (1000 * 60 * 60));
@@ -56,7 +54,9 @@ export default function ChatItem({
           <h3 className="text-lg">{userName}</h3>
           <p className="text-gray text-sm truncate max-w-40">{lastMessage}</p>
         </div>
-        <p className="ml-auto h-full max-w-28 text-gray text-right text-sm">{lastMessageTimeAgo}</p>
+        <p className="ml-auto h-full max-w-28 text-gray text-right text-sm">
+          {lastMessageTimeAgo}
+        </p>
       </div>
     </>
   );

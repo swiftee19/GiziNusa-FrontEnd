@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import MealPlansPage from "./pages/MealPlansPage";
+import MealPlansPage from "./pages/mealPlansPage";
 import MessagesPage from "./pages/MessagesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import RootLayout from "./rootLayout";

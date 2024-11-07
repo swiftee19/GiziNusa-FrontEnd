@@ -1,11 +1,9 @@
-import { useState } from "react";
 import MessagesSearchBar from "../chatBrowser/MessagesSearchBar";
 import { dummyChatItems } from "../../../typesEnumsInterfaces/dummyChatItems";
-import ChatItem, { ChatItemProps } from "./ChatItem";
+import ChatItem from "./ChatItem";
 
 export default function ChatBrowser() {
-  const [chatItemsData, setChatItemsData] =
-    useState<ChatItemProps[]>(dummyChatItems);
+  const chatItemsData = dummyChatItems;
 
   return (
     <>
@@ -17,8 +15,6 @@ export default function ChatBrowser() {
         {chatItemsData.map((chatItem) => {
           return (
             <ChatItem
-              key={chatItem.chatId}
-              chatId={chatItem.chatId}
               userImage={chatItem.userImage}
               userName={chatItem.userName}
               lastMessage={chatItem.lastMessage}

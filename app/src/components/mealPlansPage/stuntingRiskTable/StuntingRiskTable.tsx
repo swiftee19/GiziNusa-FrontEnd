@@ -5,9 +5,7 @@ import StuntingRiskRows from "./StuntingRiskRows";
 import { stuntingRiskTableDummyData } from "./stuntingRiskTableDummyData";
 
 export default function StuntingRiskTable() {
-  const [stuntingRiskRowData, setStuntingRiskRowData] = useState<
-    StuntingRiskRowProps[]
-  >(stuntingRiskTableDummyData);
+  const stuntingRiskRowData = stuntingRiskTableDummyData
 
   const [sortedStuntingRiskRowData, setSortedStuntingRiskRowData] =
     useState<StuntingRiskRowProps[]>(stuntingRiskRowData);

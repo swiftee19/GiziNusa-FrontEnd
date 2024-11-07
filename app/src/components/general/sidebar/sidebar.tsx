@@ -2,7 +2,7 @@ import {
   sidebar_buttons_data,
   SidebarButtonDataType,
 } from "./sidebarButtonsData";
-import SidebarButton from "./SidebarButton";
+import SidebarButton from "./sidebarButton";
 
 export default function Sidebar() {
   return (

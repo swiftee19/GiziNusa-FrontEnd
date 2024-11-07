@@ -1,4 +1,4 @@
-import TargetBoxSingular, { TargetBoxSingularProps } from "./TargetBoxSingular";
+import TargetBoxSingular, { TargetBoxSingularProps } from "./targetBoxSingular";
 
 interface TargetBoxesProps {
   targetBoxes: TargetBoxSingularProps[];

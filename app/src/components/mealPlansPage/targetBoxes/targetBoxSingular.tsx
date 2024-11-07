@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ChangeTargetValueModal from "./ChangeTargetValueModal";
+import ChangeTargetValueModal from "./changeTargetValueModal";
 
 export interface TargetBoxSingularProps {
   icon: string;
