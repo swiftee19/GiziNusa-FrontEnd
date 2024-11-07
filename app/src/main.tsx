@@ -8,6 +8,7 @@ import MealPlansPage from "./pages/mealPlansPage";
 import MessagesPage from "./pages/MessagesPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import RootLayout from "./rootLayout";
+import TrackingPage from "./pages/TrackingPage";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +20,16 @@ const router = createBrowserRouter([
         element: <LandingPage/>,
       },
       {
-        path: "/mealplans",
-        element: <MealPlansPage />,
+        path: "/tracking",
+        element: <TrackingPage />,
       },
       {
         path: "/messages",
         element: <MessagesPage />,
+      },
+      {
+        path: "/mealplans",
+        element: <MealPlansPage />,
       },
       {
         path: "*",
