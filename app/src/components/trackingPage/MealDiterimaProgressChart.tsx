@@ -29,7 +29,7 @@ const options = {
 export default function MealDiterimaProgressChart() {
   return (
     <>
-      <div className="w-1/4 h-fit p-4 bg-white rounded-xl flex flex-col relative">
+      <div className="w-2/5 h-fit p-4 bg-white rounded-xl flex flex-col relative border-2 border-solid border-lightgray">
         <h2 className="text-gray">Meal Diterima</h2>
           <Chart
             chartType="PieChart"
