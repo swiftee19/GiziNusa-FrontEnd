@@ -27,14 +27,8 @@ export default {
   			green: '#5BEF76'
   		},
   		colors: {
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
+			primary: '#605BFF',
+			secondary: '#C2C0F0',
   			alert: '#D11A2A',
   			alertLight: '#FBE9EA',
   			gray: '#9A9AA9',
